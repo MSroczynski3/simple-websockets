@@ -19,6 +19,10 @@ export function useWebSocket(url: string, nickname: string) {
   const reconnectTimeoutRef = useRef<number>();
 
   const connect = useCallback(() => {
+    if (!nickname) {
+      return;
+    }
+
     if (wsRef.current?.readyState === WebSocket.OPEN) {
       return;
     }
