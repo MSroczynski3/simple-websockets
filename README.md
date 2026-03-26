@@ -54,8 +54,8 @@ This is a simple realtime chat room where multiple users can send and receive me
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd websocket-chat-demo
+git clone git@github.com:MSroczynski3/simple-websockets.git
+cd simple-websockets
 ```
 
 2. Install dependencies:
